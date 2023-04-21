@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stripe Payment Form</title>
+	<link rel="stylesheet" href="Stripestyle.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Make a Payment</h1>
+		<form action="payment.php" method="POST">
+			<label for="card_number">Card Number:</label>
+			<input type="text" id="card_number" name="card_number" placeholder="1234 5678 9012 3456" required>
+
+			<label for="expiry_date">Expiry Date:</label>
+			<input type="text" id="expiry_date" name="expiry_date" placeholder="MM / YY" required>
+
+			<label for="cvv">CVV:</label>
+			<input type="text" id="cvv" name="cvv" placeholder="123" required>
+
+			<label for="cardholder_name">Cardholder Name:</label>
+			<input type="text" id="cardholder_name" name="cardholder_name" placeholder="John Doe" required>
+
+			<label for="billing_address">Billing Address:</label>
+			<input type="text" id="billing_address" name="billing_address" placeholder="123 Main St, Anytown, USA" required>
+
+			<label for="amount">Amount:</label>
+			<input type="number" id="amount" name="amount" placeholder="$0.00" required>
+
+			<button type="submit">Submit Payment</button>
+		</form>
+	</div>
+</body>
+</html>
